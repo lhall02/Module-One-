@@ -4,8 +4,8 @@ This repository contains Logan Hall's CS 499 Computer Science Capstone ePortfoli
 
 ## Portfolio
 
-- GitHub Pages: https://lhall02.github.io/Module-One-/
-- Repository: https://github.com/lhall02/Module-One-
+- GitHub Pages: https://lhall02.github.io/travlr-capstone-portfolio/
+- Repository: https://github.com/lhall02/travlr-capstone-portfolio
 
 ## Contents
 
