@@ -18,8 +18,8 @@
               <ul id="sites">
                 {{#each trips}}
                   <li>
-                    <a href="/travel"><img src="{{image}}" alt="Img"></a>
-                    <h2><a href="/travel">{{name}}</a></h2>
+                    <a href="/travel/{{code}}"><img src="{{image}}" alt="{{name}}"></a>
+                    <h2><a href="/travel/{{code}}">{{name}}</a></h2>
 
                     <p>{{description}}</p>
 
@@ -29,6 +29,9 @@
                       <strong>Start:</strong> {{start}}<br>
                       <strong>Resort:</strong> {{resort}}<br>
                       <strong>Price Per Person:</strong> ${{perPerson}}
+                    </p>
+                    <p class="trip-actions">
+                      <a class="button-link" href="/travel/{{code}}">View Details</a>
                     </p>
                   </li>
                 {{/each}}

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS 499 Capstone Portfolio | Logan Hall</title>
+  <title>CS 499 Capstone ePortfolio | Logan Hall</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <div class="brand">Logan Hall | CS Capstone</div>
+      <div class="brand">Logan Hall | CS 499</div>
       <div class="nav-links">
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="self-assessment.html">Self-Assessment</a>
         <a href="code-review.html">Code Review</a>
         <a href="artifact-software.html">Software</a>
@@ -21,49 +21,114 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>CS 499 Capstone Portfolio</h1>
-      <p>This GitHub Pages site presents my enhanced Travlr project as a professional showcase of software engineering, algorithms and data structures, and database design.</p>
-      <div class="badges">
-        <span>Software Design</span>
-        <span>Algorithms & Data Structures</span>
-        <span>Database Development</span>
-        <span>Security Mindset</span>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Computer Science Capstone</p>
+      <h1>Travlr Getaways ePortfolio</h1>
+      <p>This portfolio presents the original and enhanced Travlr application, the supporting code review work, and the reflection narratives that connect the project to software engineering, algorithms, databases, communication, collaboration, and security.</p>
+      <div class="cta-row">
+        <a class="button" href="self-assessment.html">Read Self-Assessment</a>
+        <a class="button secondary" href="https://github.com/lhall02/Module-One-">View GitHub Repository</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
+  <main>
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Portfolio Contents</p>
+          <h2>Final Capstone Submission</h2>
+        </div>
+        <p>The self-assessment introduces the portfolio first, followed by the code review and three enhanced artifact categories required for CS 499.</p>
+      </div>
+
       <div class="grid">
         <article class="card">
-          <h2>Professional self-assessment</h2>
-          <p>Read the reflective overview of my growth, professional goals, and the strengths I developed throughout the program.</p>
-          <div class="cta-row"><a class="button" href="self-assessment.html">Open</a></div>
+          <h3>Professional Self-Assessment</h3>
+          <p>A formal introduction to my growth, goals, values, and readiness for software development work.</p>
+          <a href="self-assessment.html">Open self-assessment</a>
         </article>
         <article class="card">
-          <h2>Code review</h2>
-          <p>Review the original app, the improvement targets, and the enhancement plan behind the capstone work.</p>
-          <div class="cta-row"><a class="button" href="code-review.html">Open</a></div>
+          <h3>Informal Code Review</h3>
+          <p>The existing functionality, code-analysis checklist, and enhancement plan used to guide the final work.</p>
+          <a href="code-review.html">Open code review</a>
         </article>
         <article class="card">
-          <h2>Artifact highlights</h2>
-          <p>Explore the three enhanced artifacts that demonstrate growth across the core computer science categories.</p>
-          <div class="cta-row"><a class="button" href="artifact-software.html">Start</a></div>
+          <h3>Enhanced Artifacts</h3>
+          <p>Three artifact narratives showing growth in design, algorithms, and database-backed application development.</p>
+          <a href="artifact-software.html">Start with software artifact</a>
         </article>
       </div>
     </section>
 
-    <section class="content-block">
-      <h2>Portfolio narrative</h2>
-      <p>The artifacts in this portfolio were selected to show how I can take an existing application and evolve it into a more polished, maintainable, and professionally presented solution. The work connects technical implementation with clear communication and demonstrates readiness for future software development roles.</p>
-      <ul>
-        <li>Software design and engineering improvements</li>
-        <li>Algorithms and data structure enhancements</li>
-        <li>Database and API integration improvements</li>
-      </ul>
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Artifact Overview</p>
+          <h2>Original Work to Enhanced Work</h2>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Original Artifact</th>
+              <th>Enhanced Evidence</th>
+              <th>Primary Outcome</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Software Design and Engineering</td>
+              <td>Static Travlr travel pages and the early Express MVC structure.</td>
+              <td>Dedicated trip detail route, controller workflow, Handlebars views, and clearer navigation.</td>
+              <td>Maintainable application design and professional presentation.</td>
+            </tr>
+            <tr>
+              <td>Algorithms and Data Structures</td>
+              <td>Basic trip retrieval with limited data processing.</td>
+              <td>Binary search by trip code, Map-based TTL cache, filters, grouping, and date-range lookup.</td>
+              <td>Algorithmic problem solving with attention to trade-offs.</td>
+            </tr>
+            <tr>
+              <td>Databases</td>
+              <td>Trip data model and API routes for application data.</td>
+              <td>Mongoose validation, unique trip codes, safer query handling, CRUD endpoints, and Angular admin integration.</td>
+              <td>Reliable data persistence with validation and defensive API behavior.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="grid two">
+        <article class="card">
+          <h3>Repository</h3>
+          <p>The project source, original artifact files, enhanced application code, and generated narrative documents are maintained in GitHub.</p>
+          <a href="https://github.com/lhall02/Module-One-">github.com/lhall02/Module-One-</a>
+        </article>
+        <article class="card">
+          <h3>Document Archive</h3>
+          <p>Word-document copies of the capstone planning documents and final narratives are included in the repository for course submission support.</p>
+          <a href="docs/professional-self-assessment.docx">Download final self-assessment</a>
+        </article>
+      </div>
+
+      <div class="callout">
+        <p><strong>AI usage acknowledgement:</strong> Generative AI assistance was used to help organize, revise, and format this portfolio. The final content and submitted work remain my responsibility.</p>
+      </div>
     </section>
   </main>
 
-  <footer>Prepared for the CS 499 capstone portfolio.</footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>Prepared for CS 499 Computer Science Capstone.</p>
+      <small>Logan Hall | Travlr Getaways ePortfolio</small>
+    </div>
+  </footer>
 </body>
 </html>

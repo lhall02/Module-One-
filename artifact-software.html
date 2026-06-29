@@ -9,50 +9,87 @@
 <body>
   <header>
     <nav>
-      <div class="brand">Logan Hall | CS Capstone</div>
+      <div class="brand">Logan Hall | CS 499</div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="self-assessment.html">Self-Assessment</a>
         <a href="code-review.html">Code Review</a>
-        <a href="artifact-software.html">Software</a>
+        <a class="active" href="artifact-software.html">Software</a>
         <a href="artifact-algorithms.html">Algorithms</a>
         <a href="artifact-databases.html">Databases</a>
       </div>
     </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Artifact One</p>
+      <h1>Software Design and Engineering</h1>
+      <p>This enhancement improves the Travlr customer workflow by connecting the trip list to a dedicated trip detail page through MVC routing, controller logic, API data, and Handlebars views.</p>
+      <div class="cta-row">
+        <a class="button" href="docs/software-design-engineering-narrative.docx">Download Narrative</a>
+        <a class="button secondary" href="public/travel.html">Original Static Travel Page</a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="hero">
-      <h1>Artifact 1: Software Design and Engineering</h1>
-      <p>This artifact focuses on improving the Travlr application as a polished, maintainable software experience that connects the user-facing site and the supporting server architecture.</p>
+    <section class="page-section">
+      <p class="eyebrow">Artifact Description</p>
+      <h2>What the Artifact Is</h2>
+      <p class="lead">The selected artifact is the Travlr Getaways web application, created from coursework involving full-stack web development with Express, Handlebars, Angular, and MongoDB. The software design enhancement focuses on improving how customers move from a trip list to a specific trip record.</p>
+      <p>The original project showed trip content, but the listing experience did not have a dedicated trip detail route. The enhancement adds a clearer workflow: a user can open the travel page, select a trip, and view a focused details page with the trip name, code, dates, resort, price, image, and description.</p>
     </section>
 
-    <section class="content-block">
-      <h2>What changed</h2>
-      <p>I enhanced the application by improving the structure of the route and controller flow and by creating a clearer, more professional presentation for the portfolio itself. The result is a project that is easier to navigate and better aligned with professional software delivery standards.</p>
-      <ul>
-        <li>Improved the organization around the server entry point and route handling.</li>
-        <li>Strengthened the separation of concerns between site controllers and API logic.</li>
-        <li>Created a more cohesive portfolio presentation that highlights the work clearly.</li>
+    <section class="page-section">
+      <p class="eyebrow">Enhancement</p>
+      <h2>What Changed</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Customer Workflow</h3>
+          <p>The travel list now links each trip to `/travel/:code`, and the trip detail view gives customers a dedicated page for one record.</p>
+        </article>
+        <article class="card">
+          <h3>MVC Routing</h3>
+          <p>The `travel` route delegates work to a controller, and the controller retrieves data from the API instead of mixing data access into the view.</p>
+        </article>
+        <article class="card">
+          <h3>Error Handling</h3>
+          <p>The detail controller handles missing codes, not-found trips, API failures, and server errors with clear status-aware responses.</p>
+        </article>
+        <article class="card">
+          <h3>Presentation</h3>
+          <p>The Handlebars templates and CSS were updated so the enhanced flow remains readable and consistent with the Travlr design.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <p class="eyebrow">Evidence</p>
+      <h2>Supporting Files</h2>
+      <ul class="evidence-list">
+        <li><a href="public/travel.html">Original static travel artifact</a></li>
+        <li><a href="app_server/controllers/travel.js">Enhanced travel controller</a></li>
+        <li><a href="app_server/routes/travel.js">Enhanced travel routes</a></li>
+        <li><a href="app_server/views/travel.hbs">Enhanced travel list view</a></li>
+        <li><a href="app_server/views/trip-detail.hbs">New trip detail view</a></li>
+        <li><a href="public/css/style.css">Customer-site styling</a></li>
       </ul>
     </section>
 
-    <section class="content-block">
-      <h2>Evidence and supporting files</h2>
-      <ul>
-        <li><a href="app.js">Server entry point</a></li>
-        <li><a href="app_server/controllers/travel.js">Travel controller</a></li>
-        <li><a href="app_server/routes/index.js">Site routing</a></li>
-        <li><a href="ARTIFACT_NARRATIVE.docx">Download the narrative document</a></li>
-      </ul>
-    </section>
-
-    <section class="content-block">
-      <h2>Reflection</h2>
-      <p>This enhancement emphasized the value of making software easier to understand and maintain. It showed me that strong engineering is not only about making features work, but also about making collaboration and future updates more practical.</p>
+    <section class="page-section">
+      <p class="eyebrow">Reflection</p>
+      <h2>Skills and Course Outcomes</h2>
+      <p>This enhancement demonstrates software design, route planning, view rendering, user-centered workflow design, and maintainability. It improved the artifact by making the application easier to navigate and by keeping responsibilities clearer across routes, controllers, views, and API endpoints.</p>
+      <p>The work supports the course outcomes related to professional-quality communication, designing computing solutions using computer science practices, and using well-founded tools and techniques to deliver value. It also contributes to collaboration because clearer project structure makes the code easier for another developer to review, maintain, and extend.</p>
     </section>
   </main>
 
-  <footer>Prepared for the CS 499 capstone portfolio.</footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>Prepared for CS 499 Computer Science Capstone.</p>
+      <small>Artifact category: Software Design and Engineering.</small>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="background">
+    <div id="page">
+      {{> header}}
+
+      <div id="contents">
+        <div class="box">
+          <div>
+            <div class="body trip-detail">
+              {{#if trip}}
+                <h1>{{trip.name}}</h1>
+                <img class="detail-image" src="{{trip.image}}" alt="{{trip.name}}">
+                <p>{{trip.description}}</p>
+
+                <div class="trip-meta">
+                  <p><strong>Trip Code:</strong> {{trip.code}}</p>
+                  <p><strong>Length:</strong> {{trip.length}}</p>
+                  <p><strong>Start:</strong> {{trip.start}}</p>
+                  <p><strong>Resort:</strong> {{trip.resort}}</p>
+                  <p><strong>Price Per Person:</strong> ${{trip.perPerson}}</p>
+                </div>
+
+                <p class="trip-actions">
+                  <a class="button-link" href="/travel">Back to Trips</a>
+                </p>
+              {{else}}
+                <h1>Trip Not Found</h1>
+                <p class="notice">{{message}}</p>
+                <p class="trip-actions">
+                  <a class="button-link" href="/travel">Back to Trips</a>
+                </p>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{> footer}}
+  </div>
+</body>
+</html>

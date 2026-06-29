@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Review | Logan Hall</title>
+  <title>Informal Code Review | Logan Hall</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <div class="brand">Logan Hall | CS Capstone</div>
+      <div class="brand">Logan Hall | CS 499</div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="self-assessment.html">Self-Assessment</a>
-        <a href="code-review.html">Code Review</a>
+        <a class="active" href="code-review.html">Code Review</a>
         <a href="artifact-software.html">Software</a>
         <a href="artifact-algorithms.html">Algorithms</a>
         <a href="artifact-databases.html">Databases</a>
@@ -21,38 +21,102 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Informal Code Review</p>
+      <h1>Reviewing Travlr Before Enhancement</h1>
+      <p>The code review establishes the original application behavior, identifies improvement targets, and explains why the final enhancements were selected.</p>
+      <div class="cta-row">
+        <a class="button" href="docs/code-review-journal.docx">Download Journal</a>
+        <a class="button secondary" href="https://github.com/lhall02/Module-One-">Repository</a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="hero">
-      <h1>Informal Code Review</h1>
-      <p>This review focuses on the Travlr application, which served as the foundation for the capstone enhancements.</p>
-    </section>
-
-    <section class="content-block">
-      <h2>Existing functionality</h2>
-      <p>The original project provides a travel booking experience with route-based pages, trip data, and server-side rendering. The application already demonstrates a clean separation between routes, controllers, and models, which made it a strong candidate for enhancement.</p>
-    </section>
-
-    <section class="content-block">
-      <h2>Code analysis and improvement targets</h2>
+    <section class="page-section">
+      <p class="eyebrow">Existing Functionality</p>
+      <h2>Original Travlr Application</h2>
+      <p class="lead">The original artifact is the Travlr Getaways web application. It includes customer-facing travel pages, server-side routing, trip data, and an Angular administration area for trip management. The codebase already had a useful project foundation, but it needed stronger separation of concerns, clearer evidence of algorithmic thinking, and more deliberate database validation.</p>
       <ul>
-        <li>Improve structure and readability through clearer organization of the user experience and supporting documentation.</li>
-        <li>Strengthen maintainability by improving the flow between controllers, API routes, and the data layer.</li>
-        <li>Increase clarity around algorithm choices and database behavior through better examples and explanations.</li>
-        <li>Enhance the user-facing portfolio presentation so the project is easy to understand and navigate.</li>
+        <li>Static and server-rendered travel pages presented trip information to customers.</li>
+        <li>Express routes and controllers handled page rendering and API behavior.</li>
+        <li>MongoDB/Mongoose stored trip records used by the application.</li>
+        <li>The Angular admin project provided a path toward CRUD management for trip data.</li>
       </ul>
     </section>
 
-    <section class="content-block">
-      <h2>Planned enhancements</h2>
-      <p>The enhancements in this portfolio target three key areas: software design and engineering, algorithms and data structures, and databases. Each enhancement increases the depth of the project while showing how the code can evolve from a basic application into a more polished, evidence-based solution.</p>
-      <div class="cta-row">
-        <a class="button" href="artifact-software.html">Software Enhancement</a>
-        <a class="button secondary" href="artifact-algorithms.html">Algorithm Enhancement</a>
-        <a class="button secondary" href="artifact-databases.html">Database Enhancement</a>
+    <section class="page-section">
+      <p class="eyebrow">Code Analysis</p>
+      <h2>Improvement Targets</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Structure and Maintainability</h3>
+          <p>The application needed a clearer customer workflow and stronger routing between list views, detail views, controllers, and API endpoints.</p>
+        </article>
+        <article class="card">
+          <h3>Algorithms and Data Handling</h3>
+          <p>Trip data retrieval was mostly basic list retrieval. The project needed search, filtering, grouping, caching, and a more explicit discussion of time and space trade-offs.</p>
+        </article>
+        <article class="card">
+          <h3>Database Quality</h3>
+          <p>The data layer needed stronger field validation, safer query construction, unique trip codes, and better error responses for invalid input.</p>
+        </article>
+        <article class="card">
+          <h3>Communication and Documentation</h3>
+          <p>The ePortfolio needed to explain the value of the enhancements so an instructor, peer, manager, or employer could evaluate the work quickly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <p class="eyebrow">Enhancement Plan</p>
+      <h2>Planned and Completed Enhancements</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Enhancement</th>
+              <th>Skills Demonstrated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Software Design and Engineering</td>
+              <td>Add a trip detail workflow and improve MVC routing between travel pages, controllers, and API data.</td>
+              <td>MVC organization, route planning, view rendering, error handling, and user-centered design.</td>
+            </tr>
+            <tr>
+              <td>Algorithms and Data Structures</td>
+              <td>Add binary search, filtering, grouping, date-range lookup, and a TTL cache for trip data.</td>
+              <td>Arrays of objects, comparison logic, Map caching, query construction, and algorithm trade-off analysis.</td>
+            </tr>
+            <tr>
+              <td>Databases</td>
+              <td>Strengthen the Trip schema, validate input, expose safer API access patterns, and connect the admin UI.</td>
+              <td>Mongoose modeling, validation, unique indexes, RESTful API design, and defensive database access.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <p class="eyebrow">Recording Status</p>
+      <h2>Screencast Evidence</h2>
+      <p>The code review journal explains that ScreenPal was selected for the recording and that the script should cover existing functionality, code analysis, and enhancement plans across the three required categories. No local video file or external video URL was present in the provided materials, so the portfolio is prepared for that link once the recording is uploaded.</p>
+      <div class="callout">
+        <p><strong>Action needed before final submission:</strong> add the ScreenPal, YouTube, or other hosted code review video URL to this page after the recording is available.</p>
       </div>
     </section>
   </main>
 
-  <footer>Prepared for the CS 499 capstone portfolio.</footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>Prepared for CS 499 Computer Science Capstone.</p>
+      <small>Code review journal source: 2-1 Journal.docx.</small>
+    </div>
+  </footer>
 </body>
 </html>

@@ -335,6 +335,47 @@ hr {
 	border: 1px solid #2c9688;
 	margin-left: 15px;
 }
+.trip-actions {
+	clear: both;
+	padding-top: 8px;
+}
+.button-link {
+	background: #2c9688;
+	border-radius: 4px;
+	color: #fff !important;
+	display: inline-block;
+	font: bold 13px/1 Arial, Helvetica, sans-serif;
+	padding: 10px 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.button-link:hover {
+	background: #316e66;
+	color: #fff !important;
+	text-decoration: none;
+}
+.trip-detail .detail-image {
+	border: 1px solid #2c9688;
+	float: right;
+	margin: 0 0 20px 24px;
+	max-width: 330px;
+	width: 42%;
+}
+.trip-meta {
+	background: #f4efe2;
+	border-left: 4px solid #2c9688;
+	margin: 0 0 24px;
+	padding: 16px 20px;
+}
+.trip-meta p {
+	line-height: 24px !important;
+	padding-bottom: 6px !important;
+}
+.notice {
+	background: #f4efe2;
+	border-left: 4px solid #917157;
+	padding: 16px 20px !important;
+}
 /** News **/
 #news {
 	display: inline-block;

@@ -59,6 +59,8 @@ typings/
 
 # next.js build output
 .next
+dist/
+app_admin/dist/
 
 .vscode/*
 !.vscode/settings.json
@@ -66,4 +68,3 @@ typings/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-

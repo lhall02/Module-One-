@@ -9,49 +9,107 @@
 <body>
   <header>
     <nav>
-      <div class="brand">Logan Hall | CS Capstone</div>
+      <div class="brand">Logan Hall | CS 499</div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="self-assessment.html">Self-Assessment</a>
         <a href="code-review.html">Code Review</a>
         <a href="artifact-software.html">Software</a>
-        <a href="artifact-algorithms.html">Algorithms</a>
+        <a class="active" href="artifact-algorithms.html">Algorithms</a>
         <a href="artifact-databases.html">Databases</a>
       </div>
     </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Artifact Two</p>
+      <h1>Algorithms and Data Structures</h1>
+      <p>This enhancement improves the Travlr trip API with search, filtering, grouping, range lookup, and caching so the application can process trip records more deliberately.</p>
+      <div class="cta-row">
+        <a class="button" href="docs/algorithms-data-structures-narrative.docx">Download Narrative</a>
+        <a class="button secondary" href="app_api/controllers/trips.js">Enhanced Controller</a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="hero">
-      <h1>Artifact 2: Algorithms and Data Structures</h1>
-      <p>This artifact demonstrates the use of structured logic in the trip data service, including searching, filtering, and performance-conscious handling of collections.</p>
+    <section class="page-section">
+      <p class="eyebrow">Artifact Description</p>
+      <h2>Why This Artifact Was Selected</h2>
+      <p class="lead">The selected artifact is the trip data portion of the Travlr application. A travel application depends on searching, organizing, filtering, grouping, and retrieving data efficiently, so the API controller was a strong place to demonstrate algorithms and data structures in a practical project.</p>
+      <p>The original API primarily returned trip records. The enhanced version adds several features that make the data layer more useful and show how algorithmic choices affect behavior, performance, and maintainability.</p>
     </section>
 
-    <section class="content-block">
-      <h2>What changed</h2>
-      <p>I strengthened the data-handling logic within the API layer by implementing more deliberate processing for trip records. The work highlights how data structures and algorithmic decisions influence behavior, performance, and maintainability.</p>
-      <ul>
-        <li>Used sorted trip data and a binary search approach for lookup by code.</li>
-        <li>Improved filtering operations for trip selection by date and price ranges.</li>
-        <li>Applied a cache strategy to reduce repetitive work for common requests.</li>
+    <section class="page-section">
+      <p class="eyebrow">Enhancement</p>
+      <h2>Algorithms and Data Structures Added</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Before</th>
+              <th>After</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Search</td>
+              <td>Basic retrieval only.</td>
+              <td>Binary search by trip code after sorting records by code.</td>
+            </tr>
+            <tr>
+              <td>Filtering</td>
+              <td>No advanced query filtering.</td>
+              <td>Multi-criteria filters for resort, price range, and start-date boundaries.</td>
+            </tr>
+            <tr>
+              <td>Grouping</td>
+              <td>No summary data.</td>
+              <td>Resort grouping with count, average price, minimum price, and maximum price.</td>
+            </tr>
+            <tr>
+              <td>Performance</td>
+              <td>Repeated requests always queried the database.</td>
+              <td>Map-based TTL cache reduces repeated work for common trip-list requests.</td>
+            </tr>
+            <tr>
+              <td>Routes</td>
+              <td>Limited API surface.</td>
+              <td>Additional endpoints for code lookup, filtering, grouping, date ranges, and cache clearing.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <p class="eyebrow">Evidence</p>
+      <h2>Supporting Files</h2>
+      <ul class="evidence-list">
+        <li><a href="app_api/controllers/trips.js">Enhanced API controller</a></li>
+        <li><a href="app_api/routes/trips.js">Enhanced API routes</a></li>
+        <li><a href="app_server/controllers/trips.js">Earlier server-side controller version</a></li>
+        <li><a href="app_server/routes/api/trips.js">Earlier server-side API route version</a></li>
+        <li><a href="data/trips.json">Trip seed data</a></li>
+        <li><a href="docs/algorithms-data-structures-narrative.docx">Milestone Three narrative document</a></li>
       </ul>
     </section>
 
-    <section class="content-block">
-      <h2>Evidence and supporting files</h2>
-      <ul>
-        <li><a href="app_api/controllers/trips.js">Trip API controller</a></li>
-        <li><a href="app_api/routes/trips.js">Trip API routes</a></li>
-        <li><a href="Milestone4_Artifact_Narrative.docx">Download the narrative document</a></li>
-      </ul>
-    </section>
-
-    <section class="content-block">
-      <h2>Reflection</h2>
-      <p>This enhancement made me think more carefully about trade-offs in algorithm design. I learned that efficient logic is valuable not only for speed, but also for making the application behave predictably and responsibly as data grows.</p>
+    <section class="page-section">
+      <p class="eyebrow">Reflection</p>
+      <h2>Learning and Trade-Offs</h2>
+      <p>Through this enhancement, I learned that algorithms and data structures are useful beyond classroom examples. Binary search, caching, filtering, grouping, and date-range queries all solve realistic problems in the application. I also learned that each design choice has trade-offs: caching can improve speed but introduces stale-data risk, while binary search is efficient but requires sorted input.</p>
+      <p>The enhancement supports the algorithms and data structures outcome because it uses searching, grouping, caching, and range logic to solve data access problems. It also supports the tools and techniques outcome through RESTful API design and MongoDB aggregation, and it supports the security outcome through input validation, error handling, and safer query construction.</p>
     </section>
   </main>
 
-  <footer>Prepared for the CS 499 capstone portfolio.</footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>Prepared for CS 499 Computer Science Capstone.</p>
+      <small>Artifact category: Algorithms and Data Structures.</small>
+    </div>
+  </footer>
 </body>
 </html>

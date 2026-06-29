@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 import { Trip } from '../../models/trip';
-import { TripDataService } from '../../services/trip-data.service';
+import { TripDataService } from '../../services/trip-data';
 
 @Component({
   selector: 'app-trip-add',
-  templateUrl: './trip-add.component.html'
+  imports: [FormsModule, RouterLink],
+  templateUrl: './trip-add.html'
 })
 export class TripAddComponent {
   trip: Trip = {

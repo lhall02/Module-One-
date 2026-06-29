@@ -9,10 +9,10 @@
 <body>
   <header>
     <nav>
-      <div class="brand">Logan Hall | CS Capstone</div>
+      <div class="brand">Logan Hall | CS 499</div>
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="self-assessment.html">Self-Assessment</a>
+        <a class="active" href="self-assessment.html">Self-Assessment</a>
         <a href="code-review.html">Code Review</a>
         <a href="artifact-software.html">Software</a>
         <a href="artifact-algorithms.html">Algorithms</a>
@@ -21,45 +21,82 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Professional Self-Assessment</p>
+      <h1>Growth as a Computer Science Professional</h1>
+      <p>This assessment introduces the portfolio by explaining how my coursework and capstone work shaped my technical strengths, professional goals, and readiness to contribute to software projects.</p>
+      <div class="cta-row">
+        <a class="button" href="docs/professional-self-assessment.docx">Download DOCX</a>
+        <a class="button secondary" href="artifact-software.html">View Artifacts</a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="hero">
-      <h1>Professional Self-Assessment</h1>
-      <p>This portfolio reflects the growth I made throughout the Computer Science program and demonstrates how I can contribute as a strong software professional in a collaborative, security-conscious environment.</p>
-      <div class="badges">
-        <span>Software Engineering</span>
-        <span>Algorithms & Data Structures</span>
-        <span>Database Design</span>
-        <span>Security Mindset</span>
+    <section class="page-section">
+      <p class="eyebrow">Introduction</p>
+      <h2>Program Growth and Professional Direction</h2>
+      <p class="lead">Throughout the Computer Science program, I moved from learning individual programming concepts to thinking about complete systems. Courses in programming, databases, algorithms, testing, full-stack development, and security helped me understand that professional software is more than code that runs. It also needs to be readable, maintainable, secure, testable, and useful to the people who depend on it.</p>
+      <p>Completing this ePortfolio helped me showcase that growth because it required me to revisit an existing project, evaluate its weaknesses, and improve it in several connected areas. The Travlr application gave me a practical way to demonstrate full-stack development skills: customer-facing pages, Express routes and controllers, API endpoints, MongoDB/Mongoose modeling, and an Angular administration interface. Enhancing the same application across multiple categories also helped me see how design choices in one layer affect the rest of the system.</p>
+      <p>My professional goal is to continue growing toward software engineering and full-stack web development roles. I want to build applications that solve real problems, communicate clearly with users and teammates, and handle data responsibly. This portfolio supports that goal by showing that I can take an existing codebase, improve it intentionally, and explain the value of those improvements to a technical or non-technical audience.</p>
+    </section>
+
+    <section class="page-section">
+      <p class="eyebrow">Core Strengths</p>
+      <h2>Skills Demonstrated Across the Portfolio</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Collaboration and Communication</h3>
+          <p>Code review taught me to communicate about software in a structured way: describe the current behavior, identify risks, propose improvements, and connect those improvements to stakeholder needs. Even when working individually, I treated the project as something another developer or manager would need to understand later.</p>
+        </article>
+        <article class="card">
+          <h3>Software Engineering and Databases</h3>
+          <p>The Travlr project strengthened my understanding of MVC structure, RESTful API design, Angular service integration, and MongoDB-backed persistence. I practiced separating responsibilities across routes, controllers, models, and views so the application is easier to maintain.</p>
+        </article>
+        <article class="card">
+          <h3>Algorithms and Data Structures</h3>
+          <p>The algorithms enhancement helped me apply classroom concepts to real application behavior. Binary search, filtering, grouping, date-range logic, and Map-based caching showed how data structure choices can improve performance, flexibility, and user value.</p>
+        </article>
+        <article class="card">
+          <h3>Security Mindset</h3>
+          <p>The project reinforced the need to validate input, handle missing or malformed data, protect database integrity, and avoid unsafe query behavior. Security is not a single feature added at the end; it is a habit that shapes each route, model, and data flow.</p>
+        </article>
       </div>
     </section>
 
-    <section class="content-block">
-      <h2>My journey and professional direction</h2>
-      <p>I entered this program seeking to move beyond writing functional code and toward building systems that are maintainable, secure, and valuable to users. Through the coursework and artifacts in this portfolio, I developed stronger habits in planning, testing, documentation, and communication. My goal is to continue building practical, user-centered software that combines solid technical execution with clear problem-solving.</p>
-      <p>My work in this capstone shows that I can take an existing application and improve it across multiple dimensions: structure, performance, data handling, and presentation. I also learned how important it is to explain technical decisions clearly to varied audiences, whether they are teammates, instructors, or future employers.</p>
-    </section>
+    <section class="page-section">
+      <p class="eyebrow">Portfolio Summary</p>
+      <h2>How the Artifacts Fit Together</h2>
+      <p>The three enhanced artifacts work together as one story of improving a full-stack application. The software design artifact focuses on the structure and user flow of the customer-facing Travlr experience. The algorithms and data structures artifact focuses on how trip data can be searched, filtered, grouped, cached, and retrieved more efficiently. The database artifact focuses on data integrity, API behavior, and administrative management of trip records.</p>
+      <p>Together, these artifacts demonstrate that I can evaluate an existing system, identify meaningful improvements, and implement changes that support both users and future developers. They also show that I can communicate technical work through written narratives, evidence links, and a GitHub Pages presentation that is organized for an outside audience.</p>
 
-    <section class="content-block">
-      <h2>Core strengths demonstrated</h2>
-      <ul>
-        <li><strong>Collaboration:</strong> I strengthened my ability to work within a shared software environment, document changes clearly, and build solutions that are understandable to others.</li>
-        <li><strong>Communication:</strong> I improved how I describe technical choices so that both technical and non-technical audiences can follow the value of the work.</li>
-        <li><strong>Algorithms and data structures:</strong> I applied structured reasoning to improve efficiency and create more deliberate data handling.</li>
-        <li><strong>Software engineering and databases:</strong> I connected front-end experience, server logic, and data persistence into a more complete application architecture.</li>
-        <li><strong>Security awareness:</strong> I approached the project with a mindset that values validation, resilience, and careful design to reduce risk.</li>
-      </ul>
-    </section>
-
-    <section class="content-block">
-      <h2>How the artifacts fit together</h2>
-      <p>The three enhanced artifacts in this portfolio work together to show a broader skill set. The software engineering work demonstrates my ability to improve the structure and presentation of a project. The algorithms and data structure work shows how I can reason about efficiency and complexity. The database work shows how I can support a full application with organized, accessible, and purposeful data services. Together, they demonstrate that I am prepared to grow into a dependable software developer who can contribute to real-world projects.</p>
-      <div class="cta-row">
-        <a class="button" href="artifact-software.html">View Software Artifact</a>
-        <a class="button secondary" href="artifact-algorithms.html">View Algorithms Artifact</a>
+      <div class="metric-row">
+        <div class="metric">
+          <strong>3</strong>
+          Artifact categories enhanced
+        </div>
+        <div class="metric">
+          <strong>5</strong>
+          Course outcomes addressed
+        </div>
+        <div class="metric">
+          <strong>1</strong>
+          Full-stack project portfolio
+        </div>
+        <div class="metric">
+          <strong>2026</strong>
+          Capstone completion year
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>Prepared for the CS 499 capstone portfolio.</footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>Prepared for CS 499 Computer Science Capstone.</p>
+      <small>AI assistance was used to help organize and revise this portfolio.</small>
+    </div>
+  </footer>
 </body>
 </html>

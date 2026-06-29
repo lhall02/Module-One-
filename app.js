@@ -13,7 +13,7 @@ require("./app_server/models/trips");
 var indexRouter = require("./app_server/routes/index");
 var travelRouter = require("./app_server/routes/travel");
 
-// ✅ Module 5: API routers (Separation of Concerns)
+// Module 5: API routers (separation of concerns)
 var apiRouter = require("./app_api/routes/index");
 
 var app = express();

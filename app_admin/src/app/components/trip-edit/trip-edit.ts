@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { Trip } from '../../models/trip';
-import { TripDataService } from '../../services/trip-data.service';
+import { TripDataService } from '../../services/trip-data';
 
 @Component({
   selector: 'app-trip-edit',
-  templateUrl: './trip-edit.component.html'
+  imports: [CommonModule, FormsModule, RouterLink],
+  templateUrl: './trip-edit.html'
 })
 export class TripEditComponent implements OnInit {
   tripId = '';

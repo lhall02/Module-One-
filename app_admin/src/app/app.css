@@ -1,0 +1,52 @@
+.admin-header {
+  align-items: center;
+  background: #123c43;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.admin-header h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.eyebrow {
+  color: #bde7e2;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.1rem;
+  text-transform: uppercase;
+}
+
+.admin-header nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.admin-header a {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.45rem 0.75rem;
+  text-decoration: none;
+}
+
+.admin-header a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.admin-main {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .admin-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

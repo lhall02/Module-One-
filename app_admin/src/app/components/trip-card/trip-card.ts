@@ -1,10 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Trip } from '../../models/trip';
-import { TripDataService } from '../../services/trip-data.service';
+import { TripDataService } from '../../services/trip-data';
 
 @Component({
   selector: 'app-trip-card',
-  templateUrl: './trip-card.component.html'
+  imports: [RouterLink],
+  templateUrl: './trip-card.html'
 })
 export class TripCardComponent {
   @Input() trip!: Trip;

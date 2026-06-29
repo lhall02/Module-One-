@@ -9,49 +9,87 @@
 <body>
   <header>
     <nav>
-      <div class="brand">Logan Hall | CS Capstone</div>
+      <div class="brand">Logan Hall | CS 499</div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="self-assessment.html">Self-Assessment</a>
         <a href="code-review.html">Code Review</a>
         <a href="artifact-software.html">Software</a>
         <a href="artifact-algorithms.html">Algorithms</a>
-        <a href="artifact-databases.html">Databases</a>
+        <a class="active" href="artifact-databases.html">Databases</a>
       </div>
     </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Artifact Three</p>
+      <h1>Databases</h1>
+      <p>This enhancement strengthens the Travlr data layer with schema validation, safer API behavior, query handling, and Angular admin integration for trip records.</p>
+      <div class="cta-row">
+        <a class="button" href="docs/databases-narrative.docx">Download Narrative</a>
+        <a class="button secondary" href="app_server/models/trips.js">Trip Model</a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="hero">
-      <h1>Artifact 3: Databases</h1>
-      <p>This artifact highlights the database layer that supports trip storage, retrieval, and structured query behavior for the Travlr application.</p>
+    <section class="page-section">
+      <p class="eyebrow">Artifact Description</p>
+      <h2>Database Layer and API Integration</h2>
+      <p class="lead">The selected database artifact is the MongoDB/Mongoose trip model and the Travlr API routes that create, retrieve, update, delete, and query trip records. The artifact originated from coursework using MongoDB with a Node/Express application.</p>
+      <p>The enhancement improves the database layer by adding stronger model rules, validating route input, returning clearer error responses, and connecting the Angular admin project to the trip API. This makes the project more representative of a complete web application that depends on reliable data persistence.</p>
     </section>
 
-    <section class="content-block">
-      <h2>What changed</h2>
-      <p>I strengthened the application’s data persistence layer by connecting the trip model to a fuller set of access patterns and API behavior. This makes the project more representative of a complete web application that depends on reliable database interaction.</p>
-      <ul>
-        <li>Implemented a Mongoose-based trip model with validation and required fields.</li>
-        <li>Extended the API to support retrieval, filtering, grouping, and data range queries.</li>
-        <li>Used structured data handling to support application features in a more scalable way.</li>
+    <section class="page-section">
+      <p class="eyebrow">Enhancement</p>
+      <h2>What Changed</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Schema Validation</h3>
+          <p>The Trip schema includes required fields, trimming, uppercase trip codes, unique trip codes, minimum price validation, and timestamps.</p>
+        </article>
+        <article class="card">
+          <h3>Defensive API Behavior</h3>
+          <p>The API validates object IDs, required fields, prices, dates, and query ranges before database operations are completed.</p>
+        </article>
+        <article class="card">
+          <h3>Query Usefulness</h3>
+          <p>Filtered queries, grouped resort summaries, date-range lookup, and sorted results make the data layer more valuable to the application.</p>
+        </article>
+        <article class="card">
+          <h3>Admin Integration</h3>
+          <p>The Angular admin service and CRUD components connect to `/api/trips`, supporting add, edit, delete, and list workflows.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <p class="eyebrow">Evidence</p>
+      <h2>Supporting Files</h2>
+      <ul class="evidence-list">
+        <li><a href="app_server/models/trips.js">Mongoose Trip schema</a></li>
+        <li><a href="app_server/models/db.js">Database connection</a></li>
+        <li><a href="app_api/controllers/trips.js">Database-backed API controller</a></li>
+        <li><a href="app_api/routes/trips.js">Trip API routes</a></li>
+        <li><a href="app_admin/src/app/services/trip-data.ts">Angular trip data service</a></li>
+        <li><a href="app_admin/src/app/app.routes.ts">Angular admin routes</a></li>
       </ul>
     </section>
 
-    <section class="content-block">
-      <h2>Evidence and supporting files</h2>
-      <ul>
-        <li><a href="app_server/models/trips.js">Trip model</a></li>
-        <li><a href="app_api/controllers/trips.js">Trip controller logic</a></li>
-        <li><a href="data/trips.json">Seed data</a></li>
-      </ul>
-    </section>
-
-    <section class="content-block">
-      <h2>Reflection</h2>
-      <p>The database enhancement reinforced the importance of thoughtful schema design and controlled data access. I learned that data services are not just about storing information; they must support the application’s purpose safely and effectively.</p>
+    <section class="page-section">
+      <p class="eyebrow">Reflection</p>
+      <h2>Skills and Course Outcomes</h2>
+      <p>The database enhancement reinforced the importance of thoughtful schema design and controlled data access. Data services are not just about storing information; they must support the application purpose safely, consistently, and effectively. I learned to think more carefully about invalid input, missing data, unique identifiers, and how errors should be communicated back to the caller.</p>
+      <p>This enhancement supports the course outcome related to security because it anticipates common data problems and reduces the chance of unsafe or malformed requests reaching the database. It also supports the outcomes for designing computing solutions and using well-founded tools because the work uses Mongoose, Express routing, RESTful conventions, and Angular services to deliver a more complete application.</p>
     </section>
   </main>
 
-  <footer>Prepared for the CS 499 capstone portfolio.</footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>Prepared for CS 499 Computer Science Capstone.</p>
+      <small>Artifact category: Databases.</small>
+    </div>
+  </footer>
 </body>
 </html>
