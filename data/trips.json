@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Gale Reef",
+    "code": "GALEREEF",
+    "length": "4 nights / 5 days",
+    "start": "2026-06-01",
+    "resort": "Travlr Getaways Resort",
+    "perPerson": 799,
+    "image": "/images/reef1.jpg",
+    "description": "Gale Reef (Gale Reef) is a beautiful trip with clear water and amazing views. Sed et augue lorem. In sit amet placerat arcu."
+  },
+  {
+    "name": "Dawson’s Reef",
+    "code": "DAWSONREEF",
+    "length": "3 nights / 4 days",
+    "start": "2026-07-15",
+    "resort": "Travlr Getaways Resort",
+    "perPerson": 699,
+    "image": "/images/reef2.jpg",
+    "description": "Dawson’s Reef (Dawson’s Reef) is perfect for a shorter getaway with great snorkeling. Integer magna leo, posuere et dignissim vitae."
+  },
+  {
+    "name": "Claire’s Reef",
+    "code": "CLAIREREEF",
+    "length": "5 nights / 6 days",
+    "start": "2026-08-10",
+    "resort": "Travlr Getaways Resort",
+    "perPerson": 899,
+    "image": "/images/reef3.jpg",
+    "description": "Claire’s Reef (Claire’s Reef) is ideal for longer stays and exploring more sites. Donec sed felis risus. Nulla facilisi."
+  }
+]

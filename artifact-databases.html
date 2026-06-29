@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Artifact | Logan Hall</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">Logan Hall | CS Capstone</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="self-assessment.html">Self-Assessment</a>
+        <a href="code-review.html">Code Review</a>
+        <a href="artifact-software.html">Software</a>
+        <a href="artifact-algorithms.html">Algorithms</a>
+        <a href="artifact-databases.html">Databases</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Artifact 3: Databases</h1>
+      <p>This artifact highlights the database layer that supports trip storage, retrieval, and structured query behavior for the Travlr application.</p>
+    </section>
+
+    <section class="content-block">
+      <h2>What changed</h2>
+      <p>I strengthened the application’s data persistence layer by connecting the trip model to a fuller set of access patterns and API behavior. This makes the project more representative of a complete web application that depends on reliable database interaction.</p>
+      <ul>
+        <li>Implemented a Mongoose-based trip model with validation and required fields.</li>
+        <li>Extended the API to support retrieval, filtering, grouping, and data range queries.</li>
+        <li>Used structured data handling to support application features in a more scalable way.</li>
+      </ul>
+    </section>
+
+    <section class="content-block">
+      <h2>Evidence and supporting files</h2>
+      <ul>
+        <li><a href="app_server/models/trips.js">Trip model</a></li>
+        <li><a href="app_api/controllers/trips.js">Trip controller logic</a></li>
+        <li><a href="data/trips.json">Seed data</a></li>
+      </ul>
+    </section>
+
+    <section class="content-block">
+      <h2>Reflection</h2>
+      <p>The database enhancement reinforced the importance of thoughtful schema design and controlled data access. I learned that data services are not just about storing information; they must support the application’s purpose safely and effectively.</p>
+    </section>
+  </main>
+
+  <footer>Prepared for the CS 499 capstone portfolio.</footer>
+</body>
+</html>

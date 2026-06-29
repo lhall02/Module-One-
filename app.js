@@ -5,9 +5,16 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var hbs = require("hbs");
 
-// MVC routes from app_server
+// Load DB + models at startup
+require("./app_server/models/db");
+require("./app_server/models/trips");
+
+// MVC routers (customer-facing website)
 var indexRouter = require("./app_server/routes/index");
 var travelRouter = require("./app_server/routes/travel");
+
+// ✅ Module 5: API routers (Separation of Concerns)
+var apiRouter = require("./app_api/routes/index");
 
 var app = express();
 
@@ -22,11 +29,14 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public"), { index: false }));
 
-// Routes
+// Routes (MVC)
 app.use("/", indexRouter);
 app.use("/travel", travelRouter);
+
+
+app.use("/api", apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

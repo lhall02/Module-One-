@@ -1,0 +1,18 @@
+<div class="card h-100">
+  <img class="card-img-top" [src]="trip.image" alt="Trip image" />
+  <div class="card-body">
+    <h5 class="card-title">{{ trip.name }}</h5>
+    <p class="card-text">{{ trip.description }}</p>
+    <p class="mb-1"><strong>Code:</strong> {{ trip.code }}</p>
+    <p class="mb-1"><strong>Length:</strong> {{ trip.length }}</p>
+    <p class="mb-1"><strong>Resort:</strong> {{ trip.resort }}</p>
+    <p class="mb-0"><strong>Per Person:</strong> ${{ trip.perPerson }}</p>
+  </div>
+
+  <div class="card-footer d-flex gap-2">
+    <a class="btn btn-outline-secondary btn-sm" [routerLink]="['/trips/edit', trip._id]">Edit</a>
+    <button class="btn btn-outline-danger btn-sm" (click)="onDelete()" [disabled]="deleting">
+      {{ deleting ? 'Deleting...' : 'Delete' }}
+    </button>
+  </div>
+</div>

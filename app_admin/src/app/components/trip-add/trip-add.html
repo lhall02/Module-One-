@@ -1,0 +1,50 @@
+<div class="container mt-4">
+  <h2>Add Trip</h2>
+
+  <form (ngSubmit)="save()" #f="ngForm" class="mt-3">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input class="form-control" [(ngModel)]="trip.name" name="name" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Code</label>
+      <input class="form-control" [(ngModel)]="trip.code" name="code" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Length</label>
+      <input class="form-control" [(ngModel)]="trip.length" name="length" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Start (YYYY-MM-DD)</label>
+      <input class="form-control" [(ngModel)]="trip.start" name="start" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Resort</label>
+      <input class="form-control" [(ngModel)]="trip.resort" name="resort" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Price Per Person</label>
+      <input type="number" class="form-control" [(ngModel)]="trip.perPerson" name="perPerson" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Image URL</label>
+      <input class="form-control" [(ngModel)]="trip.image" name="image" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <textarea class="form-control" [(ngModel)]="trip.description" name="description" required></textarea>
+    </div>
+
+    <button class="btn btn-primary" [disabled]="saving || !f.valid">
+      {{ saving ? 'Saving...' : 'Save' }}
+    </button>
+    <a class="btn btn-link" routerLink="/trips">Cancel</a>
+  </form>
+</div>

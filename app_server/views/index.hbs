@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>{{title}}</title>
-  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
   <div id="background">
@@ -11,12 +11,65 @@
       {{> header}}
 
       <div id="contents">
-        <div class="box">
-          <div>
-            <div class="body">
-              <h1>Home</h1>
-              <p>This page is rendering from Handlebars using MVC.</p>
+        <div id="adbox">
+          <img src="/images/sea-sound.jpg" alt="Beach view">
+          <h1>CS 499 Capstone Portfolio</h1>
+          <p>
+            This portfolio presents my enhanced Travlr project as a professional showcase of software engineering, algorithms and data structures, and database design. It highlights the growth I made throughout the Computer Science program and demonstrates how I can contribute to real-world software development work.
+          </p>
+          <p>
+            <a href="/self-assessment.html" style="color:#fff; font-weight:600;">Open the professional self-assessment</a>
+          </p>
+        </div>
+
+        <div id="main">
+          <div class="box">
+            <div>
+              <div>
+                <h3>Portfolio Highlights</h3>
+                <ul>
+                  <li>
+                    <h4><a href="/code-review.html">Informal code review</a></h4>
+                    <p>Review the original Travlr application and the planned enhancements that shaped the final portfolio.</p>
+                  </li>
+                  <li>
+                    <h4><a href="/artifact-software.html">Software design and engineering</a></h4>
+                    <p>See how I improved the application structure, maintainability, and professional presentation.</p>
+                  </li>
+                  <li>
+                    <h4><a href="/artifact-algorithms.html">Algorithms and data structures</a></h4>
+                    <p>Explore the logic behind efficient trip lookup, filtering, and data handling.</p>
+                  </li>
+                  <li>
+                    <h4><a href="/artifact-databases.html">Databases</a></h4>
+                    <p>Review the database model and API support for organized trip data management.</p>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div id="testimonials" class="box">
+            <div>
+              <div>
+                <h3>Capstone Focus</h3>
+                <p>
+                  The artifacts in this portfolio demonstrate my ability to apply computing principles in a cohesive way, balancing user experience, technical design, and professional communication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sidebar">
+          <div class="section">
+            <a href="/rooms"><img src="/images/rooms.png" alt="Rooms"></a>
+          </div>
+          <div class="section">
+            <a href="/dives"><img src="/images/dive-site.png" alt="Dive Sites"></a>
+          </div>
+          <div class="section">
+            <a href="/foods"><img src="/images/food.png" alt="Dining"></a>
           </div>
         </div>
       </div>
